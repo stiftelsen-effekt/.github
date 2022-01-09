@@ -14,7 +14,7 @@ The next step is to download the google gloud sdk to authorize the client locall
 
 After you have succesfully initialized the sdk with the `gcloud init` command, you should be able to run `gcloud config list` to confirm that it's configured correctly.
 
-<img src="gloud_config.png" width="500" />
+<img src="gcloud_config.png" width="500" />
 
 ### Google cloud sql auth proxy
 
