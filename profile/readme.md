@@ -6,7 +6,7 @@ Our mysql database is hosted in google cloud. Databases in google cloud are only
 
 Make sure you have a google cloud account, and get someone in the team to authorize you with the SQL client privilege. 
 
-ℹ️ **You must be authorized before proceeding.**
+> ℹ️ **You must be authorized before proceeding.**
 
 > It's preferable that your google cloud account is the same as your EA Norway google account, if you have one (i.e. an account with a @effektivaltruisme.no email).
 
@@ -14,7 +14,7 @@ The next step is to download the google gloud sdk to authorize the client locall
 
 After you have succesfully initialized the sdk with the `gcloud init` command, you should be able to run `gcloud config list` to confirm that it's configured correctly.
 
-<img src="gcloud_config.png" width="500" />
+<img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/gcloud_config.png" width="500" />
 
 ### Google cloud sql auth proxy
 
@@ -39,11 +39,11 @@ Having authorized the google cloud cli, follow the instructions in the google do
 
 if cloud_sql_proxy is located in the same folder in your terminal. We recommend you store the binary somewhere on your computer, and add it to your path.
 
-> It's also possible to create an alias on macos / linux to avoid having to type in the entire command each time you wish to connect.
+> 💡 It's also possible to create an alias on macos / linux to avoid having to type in the entire command each time you wish to connect.
 
 If all has gone well, you should be seeing this in your terminal of choice.
 
-<img src="sql_proxy_terminal.png" width="500" />
+<img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/sql_proxy_terminal.png" width="500" />
 
 The proxy is now listening for connections on port 3306 (the standard mysql port), and forwards any communication to the internal google cloud network through a secure tunnel.
 
@@ -51,19 +51,19 @@ The proxy is now listening for connections on port 3306 (the standard mysql port
 
 The choice of mysql client for interacting with the database is up to you. The preferred choice has thus far been mysql workbench, and we will show how to connect with that particular client, but the steps should be similar for other alternatives (including the mysql command line client).
 
-⚠️ MySql workbench has from version 8.0.27 removed the option in the dropdown menu to disable ssl on connections. We do not require SSL as we are connecting to localhost and then to the sql server via a secure tunnel. Either download version 8.0.26, or use the advanced tab to disable ssl as suggested [here](https://stackoverflow.com/questions/69747663/how-to-configure-mysql-workbench-to-not-require-ssl-encryption).
+> ⚠️ MySql workbench has from version 8.0.27 removed the option in the dropdown menu to disable ssl on connections. We do not require SSL as we are connecting to localhost and then to the sql server via a secure tunnel. Either download version 8.0.26, or use the advanced tab to disable ssl as suggested [here](https://stackoverflow.com/questions/69747663/how-to-configure-mysql-workbench-to-not-require-ssl-encryption).
 
 First, download mysql workbench [here](https://dev.mysql.com/downloads/workbench/). 
 
 Once you have mysql workbench up and running, add a new connection. You may name it whatever you want. The host should be `localhost` or `127.0.0.1`. Ask on slack in the tech channel to recieve a username and password for the server on a private message. In the SSL tab, select `if available`, as we do not need SSL on our connection on localhost. After entering the parameters, you may press test connection to verify that everything works.
 
-|<img src="workbench_parameters.png" />|<img src="workbench_ssl.png" width="500" />|<img src="workbench_test.png" width="500" />|
+|<img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/workbench_parameters.png" />|<img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/workbench_ssl.png" width="500" />|<img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/workbench_test.png" width="500" />|
 |-|-|-|
 
 Double clicking the connection on the home tab will connect you to the database.
 
 
-<img src="workbench_connected.png" width="500" />
+<img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/workbench_connected.png" width="500" />
 
 ### Concluding remarks
 
