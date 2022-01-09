@@ -57,7 +57,7 @@ First, download mysql workbench [here](https://dev.mysql.com/downloads/workbench
 
 Once you have mysql workbench up and running, add a new connection. You may name it whatever you want. The host should be `localhost` or `127.0.0.1`. Ask on slack in the tech channel to recieve a username and password for the server on a private message. In the SSL tab, select `if available`, as we do not need SSL on our connection on localhost. After entering the parameters, you may press test connection to verify that everything works.
 
-|<img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/workbench_parameters.png" />|<img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/workbench_ssl.png" width="500" />|<img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/workbench_test.png" width="500" />|
+|<img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/workbench_parameters.png" />|<img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/workbench_ssl.png"/>|<img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/workbench_test.png" />|
 |-|-|-|
 
 Double clicking the connection on the home tab will connect you to the database.
