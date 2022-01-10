@@ -18,7 +18,7 @@ After you have succesfully initialized the sdk with the `gcloud init` command, y
 
 ### Google cloud sql auth proxy
 
-When connection to a google cloud sql instance, we are required to connect through [cloud sql auth proxy](https://cloud.google.com/sql/docs/mysql/connect-admin-proxy). Having authorized the google cloud cli, follow the instructions in the google documentation. The instance name of our database is `hidden-display-243419:europe-north1:effekt-db`. Thus, the command to setup the proxy is
+When connecting to a google cloud sql instance, we are required to connect through [cloud sql auth proxy](https://cloud.google.com/sql/docs/mysql/connect-admin-proxy). Having authorized the google cloud cli, follow the instructions in the google documentation. The instance name of our database is `hidden-display-243419:europe-north1:effekt-db`. Thus, the command to setup the proxy is
 
 <details open>
   <summary>MacOS / linux</summary>
