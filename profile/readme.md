@@ -1,4 +1,4 @@
-# Stiftelsen Effekt
+# Gi Effektivt
 
 ## 🗃 Connecting to our database 
 
