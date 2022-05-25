@@ -10,9 +10,9 @@ Make sure you have a google cloud account, and get someone in the team to author
 
 > It's preferable that your google cloud account is the same as your EA Norway google account, if you have one (i.e. an account with a @effektivaltruisme.no email).
 
-The next step is to download the google gloud sdk to authorize the client locally. The google cloud sdk is a comprehensive command line tool for interacting with google cloud services. For our purposes, we only need to initialize it to authorize a connection to the database. When prompted for a project when initializing, select `hidden-display-243419`. Follow googles [quickstart guide](https://cloud.google.com/sdk/docs/quickstart) to get up and running.
+The next step is to download the google gloud sdk to authorize the client locally. The google cloud sdk is a comprehensive command line tool for interacting with google cloud services. For our purposes, we only need to initialize it to authorize a connection to the database. If prompted for a project when initializing, you may ignore this. It is *not* nescesarry to select a project. Follow googles [quickstart guide](https://cloud.google.com/sdk/docs/quickstart) to get up and running.
 
-After you have succesfully initialized the sdk with the `gcloud init` command, you should be able to run `gcloud config list` to confirm that it's configured correctly.
+After you have succesfully initialized the sdk with the `gcloud init` command, you should be able to run `gcloud config list` to confirm that it's configured correctly. It should look something like this, but note that no project needs to be selected.
 
 <img src="https://github.com/stiftelsen-effekt/.github/blob/main/profile/gcloud_config.png" width="500" />
 
