@@ -23,15 +23,15 @@ When connecting to a google cloud sql instance, we are required to connect throu
 <details open>
   <summary>MacOS / linux</summary>
   
-  ```
-  ./cloud_sql_proxy -instances=hidden-display-243419:europe-north1:effekt-db=tcp:3306
+  ```sh
+  ./cloud-sql-proxy hidden-display-243419:europe-north1:effekt-db
   ```
 </details>
 <details>
   <summary>Windows</summary>
   
-  ```
-  cloud_sql_proxy.exe -instances=hidden-display-243419:europe-north1:effekt-db=tcp:3306
+  ```sh
+  cloud_sql_proxy.exe hidden-display-243419:europe-north1:effekt-db
   ```
 </details>
 
